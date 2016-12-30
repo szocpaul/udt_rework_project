@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Dispatcher
+from .models import WorkOrder
 
 
 class DispatcherAdmin(admin.ModelAdmin):
@@ -31,4 +31,4 @@ class DispatcherAdmin(admin.ModelAdmin):
     ordering = (
         ['task', 'task_received']
     )
-admin.site.register(Dispatcher, DispatcherAdmin)
+admin.site.register(WorkOrder, DispatcherAdmin)

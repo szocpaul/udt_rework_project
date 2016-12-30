@@ -5,7 +5,7 @@ from django.utils import timezone
 from udt.choices import REQUEST_TYPE_CHOICES, REQUEST_VIA_CHOICES, GEO_CHOICES, FILTER_BY_TOOL_CHOICES, SEVERITY_CHOICES, TASKS_CHOICES
 
 
-class Dispatcher(models.Model):
+class WorkOrder(models.Model):
     uid = models.URLField(primary_key=True, default=uuid.uuid4, editable=False)
     request_type = models.CharField(max_length=10, choices=REQUEST_TYPE_CHOICES)
     requested_via = models.CharField(max_length=20, choices=REQUEST_VIA_CHOICES)
