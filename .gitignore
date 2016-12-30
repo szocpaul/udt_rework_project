@@ -2,3 +2,6 @@
 .gitignore
 .idea/
 udt_rework/__pycache__/
+/task_parser.py
+/tasks.csv
+/Tasks_choices.csv
